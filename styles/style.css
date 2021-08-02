@@ -45,7 +45,7 @@ header {
 /* main */
 
 main {
-  min-width: 25rem;
+  min-width: 20rem;
   min-height: 25rem;
   border-radius: 2%;
   background-color: var(--clr-white);
@@ -95,13 +95,52 @@ input[type='number'] {
   outline: 2px solid var(--clr-blue);
 }
 
-input[type='submit'] {
+.btn-calculate {
+  font-size: 1.2rem;
+  font-weight: bold;
   border: none;
+  padding: 0.8rem 1rem;
   background-color: var(--clr-dark);
   color: var(--clr-white);
   transition: all ease 0.2s;
 }
 
-input[type='submit']:hover {
+.btn-calculate:hover {
   transform: translateY(0.2rem);
+}
+
+.error-message {
+  display: none;
+  font-size: 0.8rem;
+  text-align: center;
+  color: red;
+}
+
+.success-container {
+  display: none;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  min-height: 5rem;
+  width: 20rem;
+  margin: 0.5rem auto;
+}
+
+.success-message {
+  font-size: 0.9rem;
+  text-align: center;
+  color: green;
+}
+
+.denomination {
+  list-style: none;
+  margin: 0.5rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.2rem 0;
+  text-align: left;
 }
