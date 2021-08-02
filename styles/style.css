@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --selected: #6feaf6;
-  --text-color: #777;
-  --white: #fff;
-  --dark-text: #1c2042;
+  --clr-blue: #6feaf6;
+  --clr-gray: #777;
+  --clr-white: #fff;
+  --clr-dark: #1c2042;
 }
 
 * {
@@ -15,8 +15,93 @@
 
 html {
   font-size: 16px;
+  line-height: 1.6;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 50vw;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.header__title {
+  font-size: 2.5rem;
+  border-bottom: 5px solid var(--clr-blue);
+}
+
+/* main */
+
+main {
+  min-width: 25rem;
+  min-height: 25rem;
+  border-radius: 2%;
+  background-color: var(--clr-white);
+  box-shadow: 3px 3px 5px var(--clr-gray);
+  color: var(--clr-dark);
+}
+.container {
+  min-width: 80%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+}
+
+.input-control label {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.input-control input {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 2px solid var(--clr-dark);
+  transition: all ease 0.2s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+.input-control input[type='number']:focus,
+.input-control input[type='number']:active {
+  border: none;
+  outline: 2px solid var(--clr-blue);
+}
+
+input[type='submit'] {
+  border: none;
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+  transition: all ease 0.2s;
+}
+
+input[type='submit']:hover {
+  transform: translateY(0.2rem);
 }

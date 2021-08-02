@@ -4,12 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movie Booking Seat</title>
+    <title>Cash - Denominator</title>
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-
+    <header>
+      <h1 class="header__title">Cash Denominator</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="input-control">
+          <label for="bill-amount">Bill Amount</label>
+          <input type="number" name="bill-amount" id="bill-amount" />
+        </div>
+        <div class="input-control">
+          <label for="amount-paid">Amount Paid</label>
+          <input type="number" name="amount-paid" id="amount-paid" />
+        </div>
+        <div class="input-control">
+          <input type="submit" value="Calculate" type="input-submit" />
+        </div>
+      </div>
+    </main>
     <script src="./scripts/script.js"></script>
   </body>
 </html>
