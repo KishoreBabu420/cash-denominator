@@ -10,7 +10,7 @@ const successMessage = document.getElementById('success-message');
 const denominationContainer = document.getElementById('denomination');
 
 //Variable
-const denominations = [2000, 500, 100, 20, 10, 5, 1];
+const denominations = [2000, 500, 200, 100, 20, 10, 5, 1];
 let denominationCount = [];
 
 // Functions
@@ -39,7 +39,7 @@ const showUI = function () {
     let li = document.createElement('li');
     li.classList = 'list-item';
     ul.appendChild(li);
-    li.innerHTML += `<strong>₹${denomination}</strong><span>#${denominationCount[index]}</span>`;
+    li.innerHTML += `<p class = "denomination-value">₹${denomination}</p><p class = "denomination-count">${denominationCount[index]}</p>`;
   });
 };
 
